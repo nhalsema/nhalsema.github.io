@@ -1,0 +1,134 @@
+// BUTTONS
+// https://copy-paste-css.com/ // bw button with a lift
+// https://codepen.io/agrimsrud/pen/RwKbwXN // button with flashlight effect
+// https://codepen.io/natszafraniec/pen/eYMPEaM // smiley face cutie button
+// https://codepen.io/myacode/pen/PoqQQNM // Neumorphic Elements
+
+//palette
+$raisin: #1b1212;
+$bone: #e2e2e2;
+
+//font
+@font-face {
+    font-family: 'champagne';
+    src: url('../assets/font/ChampagneFont.ttf') format('opentype');
+}
+
+// FOR DESKTOP
+body {
+    background-color: lightskyblue; //used for testing
+    font-family: 'champagne';
+    color: $bone;
+}
+
+// https://cssgrid-generator.netlify.app/
+.container {
+    display: grid;
+    grid-template-columns: 40px 10px 10px repeat(2, 1fr) 10px 10px 40px;
+    grid-template-rows: 40px 10px 10px repeat(4, 1fr) 10px 10px 40px;
+    column-gap: 0px;
+    row-gap: 0px;
+
+    background-color: $raisin;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.frame {
+    background-color: rgba(0, 0, 0, 0); // background transparent
+    position: fixed;
+    top: 40px;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    border: 10px solid $bone;
+}
+
+.name {
+    // background-color: lightskyblue;
+    position: absolute;
+    font-size: 6em;
+    // margin-left: .1em;
+    left: 5px;
+    top: 3px;
+    line-height: .9;
+}
+
+.minibio {
+    // background-color: lightskyblue;
+    position: fixed;
+    bottom: 58px;
+    right: 60px;
+    font-size: .57em;
+    text-align: right;
+    line-height: .8;
+}
+
+.radio {
+    // background-color: lightskyblue;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+
+.footer {
+    // background-color: lightskyblue;
+    position: absolute;
+    bottom: 148px;
+    left: -85px;
+    transform: rotate(-90deg);
+    font-size: .9em;
+}
+
+.menu {
+    // background-color: lightskyblue;
+    font-size: .25em;
+    color: $bone;
+    position: absolute;
+    left: 5px;
+    display: grid;
+    gap: 3px; 
+    text-decoration: none; 
+    font-style: normal;
+}
+
+//FOR MOBILE 
+@media only screen and (max-width: 600px) {
+    .frame {
+        top: 15px;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .name {
+        font-size: 4em;
+        top: 9px;
+        left: 12px;
+    }
+
+    .minibio {
+        background-color: orange;
+        position: absolute;
+        top: calc(100% + 15px); // sit right below .name
+        left: 3px;
+        text-align: left;
+    }
+
+    .radio {
+        bottom: 34px;
+        left: 39px;
+        font-size: 1.8em;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 112px;
+        left: -96px;
+        transform: rotate(-90deg);
+        font-size: .8em;
+    }
+}
