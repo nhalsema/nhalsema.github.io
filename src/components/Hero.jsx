@@ -1,27 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom'
 import './Hero.scss';
-import './Smile.scss';
-
+import Nav from "./Nav";
 
 function Hero() {
     const [topping, setTopping] = useState("Medium")
 
     return (
         <div className="container">
-            <div className="menu">
-
-            </div>
             <div className="frame">
                 <div className="name">
                     Nicolette Halsema
-                    <div className="menu">
-                        <a href="/about">home</a><br/>
-                        <a href="/about">who is nicolette?</a><br/>
-                        <a href="/about">are you hiring?</a><br/>
-                        <a href="/about">kkkkkkkk</a><br/>
-                        <a href="/about">socials</a><br/>
-                        <a href="/about">contact</a>
+                    <div className="nav">
+                        {/* home - who is nicolette? - are you hiring? - socials - contact */}
+                        <Nav />
                     </div>
                     <div className="minibio">
                         software developer<br />
@@ -30,7 +21,8 @@ function Hero() {
                     </div>
                 </div>
                 {/* SMILIE */}
-                {/* <div className="smile">
+                <div>
+                    {/* <div className="smile">
                     <a href="#" class="link link--alt">
                         <svg viewBox='0 0 200 200' width='200' height='200' xmlns='http://www.w3.org/2000/svg' class="link__svg" aria-labelledby="link2-title link2-desc">
                             <title id="link2-title">ey, you're cool click here for fun</title>
@@ -51,6 +43,7 @@ function Hero() {
                         </svg>
                     </a>
                 </div> */}
+                </div>
             </div>
             <div className="footer">
                 created jan 2024 - last updated jan 2024

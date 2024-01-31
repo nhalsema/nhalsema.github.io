@@ -11,7 +11,7 @@ $bone: #e2e2e2;
 //font
 @font-face {
     font-family: 'champagne';
-    src: url('../assets/font/ChampagneFont.ttf') format('opentype');
+    src: url('../assets/ChampagneFont.ttf') format('opentype');
 }
 
 // FOR DESKTOP
@@ -83,7 +83,7 @@ body {
     font-size: .9em;
 }
 
-.menu {
+.nav {
     // background-color: lightskyblue;
     font-size: .25em;
     color: $bone;
