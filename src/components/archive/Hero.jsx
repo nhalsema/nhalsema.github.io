@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Hero.scss';
 import Nav from "./Nav";
+import Bio from "./views/Bio";
 
 function Hero() {
     const [topping, setTopping] = useState("Medium")
@@ -10,15 +11,18 @@ function Hero() {
             <div className="frame">
                 <div className="name">
                     Nicolette Halsema
-                    <div className="nav">
-                        {/* home - who is nicolette? - are you hiring? - socials - contact */}
-                        <Nav />
-                    </div>
                     <div className="minibio">
                         software developer<br />
                         tech evangelist<br />
                         creative<br />
                     </div>
+                </div>
+                <div className="nav">
+                    {/* home - who is nicolette? - are you hiring? - socials - contact */}
+                    <Nav />
+                </div>
+                <div className='view'>
+                    <Bio />
                 </div>
                 {/* SMILIE */}
                 <div>

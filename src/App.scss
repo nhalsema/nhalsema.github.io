@@ -11,7 +11,7 @@ $bone: #e2e2e2;
 //font
 @font-face {
     font-family: 'champagne';
-    src: url('../assets/ChampagneFont.ttf') format('opentype');
+    src: url('./assets/ChampagneFont.ttf') format('opentype');
 }
 
 // FOR DESKTOP
@@ -29,7 +29,7 @@ body {
     column-gap: 0px;
     row-gap: 0px;
 
-    background-color: $raisin;
+    // background-color: $raisin;
     position: fixed;
     top: 0;
     left: 0;
@@ -51,48 +51,96 @@ body {
     // background-color: lightskyblue;
     position: absolute;
     font-size: 6em;
-    // margin-left: .1em;
-    left: 5px;
-    top: 3px;
+    left: .25vw;
+    top: 0px;
     line-height: .9;
+}
+
+.nav {
+    // background-color: lightskyblue;
+    font-size: .25em;
+    position: absolute;
+    left: .4vw;
+    display: grid;
+    gap: 3px;
+    margin-top: 100px;
 }
 
 .minibio {
     // background-color: lightskyblue;
     position: fixed;
-    bottom: 58px;
+    bottom: 62px;
     right: 60px;
     font-size: .57em;
     text-align: right;
     line-height: .8;
 }
 
-.radio {
+.footer-horizontal {
     // background-color: lightskyblue;
     position: absolute;
-    bottom: 20px;
+    font-size: .8em;
+    bottom: 24px;
     left: 40px;
 }
 
-.footer {
+.footer-verticle {
     // background-color: lightskyblue;
     position: absolute;
-    bottom: 148px;
-    left: -85px;
+    bottom: 158px;
+    left: -96px;
     transform: rotate(-90deg);
     font-size: .9em;
 }
 
-.nav {
-    // background-color: lightskyblue;
-    font-size: .25em;
-    color: $bone;
+.bio {
+    // background-color:cadetblue;
     position: absolute;
-    left: 5px;
-    display: grid;
-    gap: 3px; 
-    text-decoration: none; 
-    font-style: normal;
+    right: 10px;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 47vw;
+    font-size: 1.6em;
+    text-align: right;
+}
+
+// //75% SCREEN 
+// @media only screen and (max-width: 1800px) {
+//     .bio {
+//         // background-color:orange;
+//         top: 40%;
+//     }
+// }
+
+//75% SCREEN 
+@media only screen and (max-width: 1800px) {
+    .bio {
+        // background-color:darkolivegreen;
+        top: 45%;
+    }
+}
+
+//LESS HALF SCREEN 
+@media only screen and (max-width: 900px) {
+    .name {
+        // background-color:cornflowerblue;
+    }
+
+    .nav {
+        top: 12%;
+        position: relative;
+    }
+
+    .bio {
+        // background-color:cadetblue;
+        font-size: 1.3em;
+        top: 50%;
+        width: 75%;
+    }
+
+    .minibio {
+        font-size: .4em;
+    }
 }
 
 //FOR MOBILE 
@@ -110,6 +158,18 @@ body {
         left: 12px;
     }
 
+    .bio {
+        // background-color:cadetblue;
+        position: absolute;
+        right: auto;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80.5vw;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
     .minibio {
         background-color: orange;
         position: absolute;
@@ -118,17 +178,28 @@ body {
         text-align: left;
     }
 
-    .radio {
-        bottom: 34px;
-        left: 39px;
-        font-size: 1.8em;
+    .footer-horizontal {
+        bottom: 0px;
+        left: 15px;
+        font-size: .8em;
     }
 
-    .footer {
+    .footer-verticle {
         position: absolute;
         bottom: 112px;
         left: -96px;
         transform: rotate(-90deg);
         font-size: .8em;
+    }
+
+    .nav {
+        // background-color: lightskyblue;
+        position: absolute;
+        left: auto;
+        right: 10px;
+        top: auto;
+        bottom: 10px;
+        text-align: right;
+        font-size: .5em;
     }
 }

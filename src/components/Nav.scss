@@ -1,0 +1,22 @@
+//palette
+$raisin: #1b1212;
+$bone: #e2e2e2;
+
+//font
+@font-face {
+    font-family: 'champagne';
+    src: url('../assets/ChampagneFont.ttf') format('opentype');
+}
+
+.button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: $bone;
+    font-family: 'champagne';
+    font-size: 5em;
+    line-height: 1;
+}
