@@ -66,6 +66,19 @@ body {
     margin-top: 100px;
 }
 
+.btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: $bone;
+    font-family: 'champagne';
+    font-size: 5em;
+    line-height: 1;
+}
+
 .minibio {
     // background-color: lightskyblue;
     position: fixed;
@@ -87,8 +100,8 @@ body {
 .footer-verticle {
     // background-color: lightskyblue;
     position: absolute;
-    bottom: 158px;
-    left: -96px;
+    bottom: 160px;
+    left: -98px;
     transform: rotate(-90deg);
     font-size: .9em;
 }
@@ -104,14 +117,6 @@ body {
     text-align: right;
 }
 
-// //75% SCREEN 
-// @media only screen and (max-width: 1800px) {
-//     .bio {
-//         // background-color:orange;
-//         top: 40%;
-//     }
-// }
-
 //75% SCREEN 
 @media only screen and (max-width: 1800px) {
     .bio {
@@ -122,10 +127,6 @@ body {
 
 //LESS HALF SCREEN 
 @media only screen and (max-width: 900px) {
-    .name {
-        // background-color:cornflowerblue;
-    }
-
     .nav {
         top: 12%;
         position: relative;
@@ -154,26 +155,26 @@ body {
 
     .name {
         font-size: 4em;
-        top: 9px;
-        left: 12px;
+        top: 2px;
+        left: 6px;
     }
 
     .bio {
         // background-color:cadetblue;
         position: absolute;
         right: auto;
-        left: 15px;
+        left: 10px;
         top: 50%;
         transform: translateY(-50%);
         width: 80.5vw;
-        font-size: 1.2em;
+        font-size: 1.1em;
         text-align: left;
     }
 
     .minibio {
         background-color: orange;
         position: absolute;
-        top: calc(100% + 15px); // sit right below .name
+        top: calc(100% + 15px);
         left: 3px;
         text-align: left;
     }
@@ -185,21 +186,18 @@ body {
     }
 
     .footer-verticle {
-        position: absolute;
-        bottom: 112px;
-        left: -96px;
-        transform: rotate(-90deg);
-        font-size: .8em;
+        bottom: 135px;
+        left: -121px;
     }
 
     .nav {
         // background-color: lightskyblue;
         position: absolute;
         left: auto;
-        right: 10px;
+        right: 5px;
         top: auto;
-        bottom: 10px;
+        bottom: 5px;
         text-align: right;
-        font-size: .5em;
+        font-size: .4em;
     }
 }

@@ -38,6 +38,10 @@ function LavaLamp() {
         let count = 20;
         let blur = [12, 70];
         let radius = [1, 120];
+        if (window.innerWidth <= 768) {
+            count = 8;
+            radius = [50, 120];
+        }
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.globalCompositeOperation = 'lighter';
@@ -101,7 +105,8 @@ function LavaLamp() {
                     item.initialYDirection = item.initialYDirection * -1;
                 }
 
-                if (item.blur + (item.initialBlurDirection * adjBlur) >= radius[1] && item.initialBlurDirection !== 0 || item.blur + (item.initialBlurDirection * adjBlur) <= radius[0] && item.initialBlurDirection !== 0) {
+                if (item.blur + (item.initialBlurDirection * adjBlur) >= radius[1] && item.initialBlurDirection !== 0
+                    || item.blur + (item.initialBlurDirection * adjBlur) <= radius[0] && item.initialBlurDirection !== 0) {
                     item.initialBlurDirection *= -1;
                 }
 

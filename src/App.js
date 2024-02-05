@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { Routes, Route, Outlet, useLocation, Link, errorElement } from 'react-router-dom';
+import React, { useState } from "react";
 import './App.scss';
-import Nav from "./components/Nav.jsx";
-import Bio from "./components/views/Bio.jsx";
-import './components/LavaLamp.css';
-import LavaLamp from "./components/LavaLamp.jsx";
+import './components/background/LavaLamp.css';
+import LavaLamp from "./components/background/LavaLamp.jsx";
+import Card from './components/Card.jsx';
+import Data from './components/Data.jsx';
 
 function App() {
   LavaLamp();
+  const [active, setActive] = useState("FirstCard");
+
   return (
     <div>
       <canvas id="canvas"></canvas>
@@ -22,12 +23,28 @@ function App() {
             </div>
           </div>
           <div className="nav">
-            {/* home - who is nicolette? - are you hiring? - socials - contact */}
-            <Nav />
+            <nav>
+              <div>
+                <button className="btn" onClick={() => setActive("Home")}>Home</button><br />
+                <button className="btn" onClick={() => setActive("About")}>About</button><br />
+                <button className="btn" onClick={() => setActive("Hiring")}>Hiring</button><br />
+                <button className="btn" onClick={() => setActive("Social")}>Social</button><br />
+                <button className="btn" onClick={() => setActive("Contact")}>Contact</button>
+              </div>
+            </nav>
           </div>
           <div className='bio'>
-            <Bio />
+            <div className='bio'>
+              {active === "Home" && <Card data={Data} cardIndex={0} />}
+              {active === "About" && <Card data={Data} cardIndex={1} />}
+              {active === "Hiring" && <Card data={Data} cardIndex={2} />}
+              {active === "Social" && <Card data={Data} cardIndex={3} />}
+              {active === "Contact" && <Card data={Data} cardIndex={4} />}
+            </div>
           </div>
+
+
+
           {/* SMILIE */}
           <div>
             {/* <div className="smile">
@@ -53,11 +70,11 @@ function App() {
         </div> */}
           </div>
         </div>
-        <div className="footer-verticle">
-          {/* created Jan 2024 - last updated Jan 2024 */}
-        </div>
-        <div className="footer-horizontal">
+        {/* <div className="footer-verticle">
           created Jan 2024 - last updated Jan 2024
+        </div> */}
+        <div className="footer-horizontal">
+          {/* created Jan 2024 - last updated Jan 2024 */}
           {/* dark light disco */}
         </div>
       </div>
