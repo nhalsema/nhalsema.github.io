@@ -54,6 +54,7 @@ body {
     left: .25vw;
     top: 0px;
     line-height: .9;
+
 }
 
 .nav {
@@ -79,16 +80,8 @@ body {
     line-height: 1;
 }
 
-.minibio {
-    // background-color: lightskyblue;
-    position: fixed;
-    bottom: 62px;
-    right: 60px;
-    font-size: .57em;
-    text-align: right;
-    line-height: .8;
-}
 
+// NOT IN USE 
 .footer-horizontal {
     // background-color: lightskyblue;
     position: absolute;
@@ -97,6 +90,7 @@ body {
     left: 40px;
 }
 
+// NOT IN USE
 .footer-verticle {
     // background-color: lightskyblue;
     position: absolute;
@@ -106,22 +100,65 @@ body {
     font-size: .9em;
 }
 
-.bio {
+// NOT IN USE
+.card {
     // background-color:cadetblue;
     position: absolute;
     right: 10px;
-    top: 30%;
+    top: 20%;
     transform: translateY(-50%);
     width: 47vw;
-    font-size: 1.6em;
+    font-size: calc(16px + 1vw);
     text-align: right;
+    white-space: pre-wrap;
 }
+
+.home {
+    // background-color: orange;
+    position: fixed;
+    bottom: 62px;
+    right: 60px;
+    font-size: calc(18px + 2vw);
+    text-align: right;
+    line-height: .8;
+
+}
+
+.bio {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bio_img {
+    width: calc(80px + 8vw);
+    height: calc(80px + 8vw);
+    border-radius: 25%;
+    float: right;
+}
+
+.bio_text {
+    // background-color:cadetblue;
+    width: 47vw;
+    font-size: calc(12px + 1vw);
+    text-align: right;
+    white-space: pre-wrap;
+    clear: both;
+    margin-top: 10px;
+}
+
+// .top {
+//     border-radius: 5%;
+//     border-color: darkseagreen;
+// }
 
 //75% SCREEN 
 @media only screen and (max-width: 1800px) {
-    .bio {
+    .card {
         // background-color:darkolivegreen;
         top: 45%;
+        width: 80%;
     }
 }
 
@@ -132,15 +169,11 @@ body {
         position: relative;
     }
 
-    .bio {
+    .card {
         // background-color:cadetblue;
-        font-size: 1.3em;
-        top: 50%;
-        width: 75%;
-    }
-
-    .minibio {
-        font-size: .4em;
+        // font-size: 1.3em;
+        font-size: calc(12px + 2vw);
+        top: 55%;
     }
 }
 
@@ -159,32 +192,27 @@ body {
         left: 6px;
     }
 
-    .bio {
+    .card {
         // background-color:cadetblue;
         position: absolute;
         right: auto;
-        left: 10px;
+        left: 5px;
         top: 50%;
         transform: translateY(-50%);
         width: 80.5vw;
-        font-size: 1.1em;
+        // font-size: 1.1em;
+        font-size: calc(12px + .3em);
         text-align: left;
     }
 
-    .minibio {
-        background-color: orange;
-        position: absolute;
-        top: calc(100% + 15px);
-        left: 3px;
-        text-align: left;
-    }
-
+    // NOT IN USE
     .footer-horizontal {
         bottom: 0px;
         left: 15px;
         font-size: .8em;
     }
 
+    // NOT IN USE 
     .footer-verticle {
         bottom: 135px;
         left: -121px;
@@ -199,5 +227,28 @@ body {
         bottom: 5px;
         text-align: right;
         font-size: .4em;
+    }
+
+    .bio {
+        right: auto;
+        left: 5px;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bio_img {
+        float: left;
+        margin-top: 5%;
+        width: calc(80px +  20vw);
+        height: calc(80px + 20vw);    }
+
+    .bio_text {
+        // background-color:cadetblue;
+        width: 80vw;
+        font-size: calc(12px + 2vw);
+        text-align: left;
+        order: -1;
     }
 }

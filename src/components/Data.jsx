@@ -1,27 +1,41 @@
+import nhImg from '../assets/nhImg.jpg';
+
 export default [
     [
         {
-            title: "",
+            top:
+                <div className='home'>
+                    software developer<br />tech evangelist<br />creative
+                </div>,
         }
     ],
     [
         {
-            title: "Multihypenate passionate about utilizing technology to increase ease in daily life. Endeavoring to find the best tool for the job, frequently learning new skills to accomplish goals. Striving to proceed humbly and foster an environment of communication, continuous improvement, and optimization.",
+            top:
+                <div className='bio'>
+                    <div>
+                        <img className='bio_img' src={nhImg} />
+                    </div>
+                    <div className='bio_text'>
+                        I am a flexible multihypenate who is most excited by technology when it is utilized to increase ease in daily life. I endeavor to always find the best tool for the job, and as such, I am frequently learning new skills. I strive to proceed humbly and foster an environment of communication, continuous improvement, and optimization.
+                    </div>
+                </div>
         }
     ],
     [
         {
-            title: "HIRING"
+            top: "Hey, you're hiring? Oh, cool! Because I'm available!\n Here are some things I'm good at:",
+            bottom: "sdlkf"
         }
     ],
     [
         {
-            title: "SOCIAL"
+            top: "SOCIAL"
         }
     ],
     [
         {
-            title: "CONTACT"
+            top: "CONTACT"
         }
     ],
 ]
