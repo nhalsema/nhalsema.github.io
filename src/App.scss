@@ -65,6 +65,8 @@ body {
     display: grid;
     gap: 3px;
     margin-top: 100px;
+    z-index: 9999; // Set a high z-index value to bring the element to the front
+
 }
 
 .btn {
@@ -121,7 +123,6 @@ body {
     font-size: calc(18px + 2vw);
     text-align: right;
     line-height: .8;
-
 }
 
 .bio {
@@ -155,6 +156,8 @@ body {
 
 //75% SCREEN 
 @media only screen and (max-width: 1800px) {
+
+    // NOT IN USE 
     .card {
         // background-color:darkolivegreen;
         top: 45%;
@@ -169,6 +172,7 @@ body {
         position: relative;
     }
 
+    // NOT IN USE
     .card {
         // background-color:cadetblue;
         // font-size: 1.3em;
@@ -192,6 +196,7 @@ body {
         left: 6px;
     }
 
+    // NOT IN USE 
     .card {
         // background-color:cadetblue;
         position: absolute;
@@ -229,6 +234,26 @@ body {
         font-size: .4em;
     }
 
+    .home {
+        // background-color: orange;
+        // position: fixed;
+        // bottom: 62px;
+        // right: 60px;
+        // text-align: right;
+        // line-height: .8;
+        right: auto;
+        left: 35px;
+        bottom: auto;
+        top: 150px;
+        text-align: left;
+        line-height: 1;
+        font-size: calc(18px + 2vw);
+        border-top: 2px solid $bone;
+        padding-top: 10px; // Add 5px between text and border
+        width: calc(100vw - 70px);
+        
+    }
+
     .bio {
         right: auto;
         left: 5px;
@@ -240,14 +265,15 @@ body {
 
     .bio_img {
         float: left;
-        margin-top: 5%;
-        width: calc(80px +  20vw);
-        height: calc(80px + 20vw);    }
+        margin-top: 2%;
+        width:  calc(60px + 20vw);
+        height: calc(60px + 20vw);
+    }
 
     .bio_text {
         // background-color:cadetblue;
         width: 80vw;
-        font-size: calc(12px + 2vw);
+        font-size: calc(12px + 1.5vw);
         text-align: left;
         order: -1;
     }
