@@ -16,7 +16,7 @@ $bone: #e2e2e2;
 
 // FOR DESKTOP
 body {
-    background-color: lightskyblue; //used for testing
+    background-color: $raisin;
     font-family: 'champagne';
     color: $bone;
 }
@@ -54,7 +54,6 @@ body {
     left: .25vw;
     top: 0px;
     line-height: .9;
-
 }
 
 .nav {
@@ -65,8 +64,7 @@ body {
     display: grid;
     gap: 3px;
     margin-top: 100px;
-    z-index: 9999; // Set a high z-index value to bring the element to the front
-
+    z-index: 9999;
 }
 
 .btn {
@@ -82,39 +80,7 @@ body {
     line-height: 1;
 }
 
-
-// NOT IN USE 
-.footer-horizontal {
-    // background-color: lightskyblue;
-    position: absolute;
-    font-size: .8em;
-    bottom: 24px;
-    left: 40px;
-}
-
-// NOT IN USE
-.footer-verticle {
-    // background-color: lightskyblue;
-    position: absolute;
-    bottom: 160px;
-    left: -98px;
-    transform: rotate(-90deg);
-    font-size: .9em;
-}
-
-// NOT IN USE
-.card {
-    // background-color:cadetblue;
-    position: absolute;
-    right: 10px;
-    top: 20%;
-    transform: translateY(-50%);
-    width: 47vw;
-    font-size: calc(16px + 1vw);
-    text-align: right;
-    white-space: pre-wrap;
-}
-
+// HOME
 .home {
     // background-color: orange;
     position: fixed;
@@ -122,47 +88,57 @@ body {
     right: 60px;
     font-size: calc(18px + 2vw);
     text-align: right;
-    line-height: .8;
+    line-height: 1;
 }
 
-.bio {
+// CARD
+.card {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    text-align: right;
 }
 
-.bio_img {
+// ABOUT
+.card__bio_img {
     width: calc(80px + 8vw);
     height: calc(80px + 8vw);
     border-radius: 25%;
     float: right;
 }
 
-.bio_text {
+.card__bio_text {
     // background-color:cadetblue;
     width: 47vw;
     font-size: calc(12px + 1vw);
-    text-align: right;
     white-space: pre-wrap;
     clear: both;
     margin-top: 10px;
 }
 
-// .top {
-//     border-radius: 5%;
-//     border-color: darkseagreen;
-// }
+// HIRING
+.card__hiring_text {
+    // background-color:cadetblue;
+    font-size: calc(12px + 1vw);
+    white-space: pre-wrap;
+    clear: both;
+    margin-top: 10px;
+}
 
-//75% SCREEN 
-@media only screen and (max-width: 1800px) {
+.card__hiring_stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 
-    // NOT IN USE 
-    .card {
-        // background-color:darkolivegreen;
-        top: 45%;
-        width: 80%;
-    }
+.card__hiring_stack_item {
+    border: 1px solid $bone;
+    margin: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 //LESS HALF SCREEN 
@@ -170,14 +146,6 @@ body {
     .nav {
         top: 12%;
         position: relative;
-    }
-
-    // NOT IN USE
-    .card {
-        // background-color:cadetblue;
-        // font-size: 1.3em;
-        font-size: calc(12px + 2vw);
-        top: 55%;
     }
 }
 
@@ -196,33 +164,6 @@ body {
         left: 6px;
     }
 
-    // NOT IN USE 
-    .card {
-        // background-color:cadetblue;
-        position: absolute;
-        right: auto;
-        left: 5px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 80.5vw;
-        // font-size: 1.1em;
-        font-size: calc(12px + .3em);
-        text-align: left;
-    }
-
-    // NOT IN USE
-    .footer-horizontal {
-        bottom: 0px;
-        left: 15px;
-        font-size: .8em;
-    }
-
-    // NOT IN USE 
-    .footer-verticle {
-        bottom: 135px;
-        left: -121px;
-    }
-
     .nav {
         // background-color: lightskyblue;
         position: absolute;
@@ -234,27 +175,20 @@ body {
         font-size: .4em;
     }
 
+    // HOME
     .home {
-        // background-color: orange;
-        // position: fixed;
-        // bottom: 62px;
-        // right: 60px;
-        // text-align: right;
-        // line-height: .8;
         right: auto;
         left: 35px;
         bottom: auto;
         top: 150px;
         text-align: left;
-        line-height: 1;
         font-size: calc(18px + 2vw);
         border-top: 2px solid $bone;
-        padding-top: 10px; // Add 5px between text and border
+        padding-top: 10px;
         width: calc(100vw - 70px);
-        
     }
 
-    .bio {
+    .card {
         right: auto;
         left: 5px;
         top: 50%;
@@ -263,18 +197,29 @@ body {
         flex-wrap: wrap;
     }
 
-    .bio_img {
+    // ABOUT
+    .card__bio_img {
         float: left;
         margin-top: 2%;
-        width:  calc(60px + 20vw);
+        width: calc(60px + 20vw);
         height: calc(60px + 20vw);
     }
 
-    .bio_text {
+    .card__bio_text {
         // background-color:cadetblue;
         width: 80vw;
         font-size: calc(12px + 1.5vw);
         text-align: left;
         order: -1;
     }
+
+    // HIRING
+    .card__hiring_text {
+        // background-color:cadetblue;
+        width: 80vw;
+        font-size: calc(12px + 1.5vw);
+        text-align: left;
+    }
+
+    .card__hiring_stack {}
 }

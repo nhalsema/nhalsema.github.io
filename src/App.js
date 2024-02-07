@@ -25,7 +25,7 @@ function App() {
           <div className="nav">
             <nav>
               <button className="btn" onClick={() => setActive("Home")}>Home</button><br />
-              <button className="btn" onClick={() => setActive("About")}>Micro Bio</button><br />
+              <button className="btn" onClick={() => setActive("About")}>About</button><br />
               <button className="btn" onClick={() => setActive("Hiring")}>Are you hiring?</button><br />
               <button className="btn" onClick={() => setActive("Work")}>Work</button><br />
               <button className="btn" onClick={() => setActive("Contact")}>Connect</button>

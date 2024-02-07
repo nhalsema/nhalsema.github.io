@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "champagne";
+  src: url("./assets/ChampagneFont.ttf") format("opentype");
+}
+body {
+  background-color: #1b1212;
+  font-family: "champagne";
+  color: #e2e2e2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40px 10px 10px repeat(2, 1fr) 10px 10px 40px;
+  grid-template-rows: 40px 10px 10px repeat(4, 1fr) 10px 10px 40px;
+  column-gap: 0px;
+  row-gap: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.frame {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  border: 10px solid #e2e2e2;
+}
+
+.name {
+  position: absolute;
+  font-size: 6em;
+  left: 0.25vw;
+  top: 0px;
+  line-height: 0.9;
+}
+
+.nav {
+  font-size: 0.25em;
+  position: absolute;
+  left: 0.4vw;
+  display: grid;
+  gap: 3px;
+  margin-top: 100px;
+  z-index: 9999;
+}
+
+.btn {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #e2e2e2;
+  font-family: "champagne";
+  font-size: 5em;
+  line-height: 1;
+}
+
+.home {
+  position: fixed;
+  bottom: 62px;
+  right: 60px;
+  font-size: calc(18px + 2vw);
+  text-align: right;
+  line-height: 1;
+}
+
+.card {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+.card__bio_img {
+  width: calc(80px + 8vw);
+  height: calc(80px + 8vw);
+  border-radius: 25%;
+  float: right;
+}
+
+.card__bio_text {
+  width: 47vw;
+  font-size: calc(12px + 1vw);
+  white-space: pre-wrap;
+  clear: both;
+  margin-top: 10px;
+}
+
+.card__hiring_text {
+  font-size: calc(12px + 1vw);
+  white-space: pre-wrap;
+  clear: both;
+  margin-top: 10px;
+}
+
+.card__hiring_stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.card__hiring_stack_item {
+  border: 1px solid #e2e2e2;
+  margin: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav {
+    top: 12%;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .frame {
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+  }
+  .name {
+    font-size: 4em;
+    top: 2px;
+    left: 6px;
+  }
+  .nav {
+    position: absolute;
+    left: auto;
+    right: 5px;
+    top: auto;
+    bottom: 5px;
+    text-align: right;
+    font-size: 0.4em;
+  }
+  .home {
+    right: auto;
+    left: 35px;
+    bottom: auto;
+    top: 150px;
+    text-align: left;
+    font-size: calc(18px + 2vw);
+    border-top: 2px solid #e2e2e2;
+    padding-top: 10px;
+    width: calc(100vw - 70px);
+  }
+  .card {
+    right: auto;
+    left: 5px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .card__bio_img {
+    float: left;
+    margin-top: 2%;
+    width: calc(60px + 20vw);
+    height: calc(60px + 20vw);
+  }
+  .card__bio_text {
+    width: 80vw;
+    font-size: calc(12px + 1.5vw);
+    text-align: left;
+    order: -1;
+  }
+  .card__hiring_text {
+    width: 80vw;
+    font-size: calc(12px + 1.5vw);
+    text-align: left;
+  }
+}/*# sourceMappingURL=App.css.map */
