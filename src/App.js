@@ -39,6 +39,48 @@ function App() {
             {active === "Work" && <Card data={Data} cardIndex={3} />}
             {active === "Contact" && <Card data={Data} cardIndex={4} />}
           </div>
+          <div className='footer'>
+            {/*  ✦✮✩☯︎❀✌︎︎⭒✺☺ */}
+            <a
+              className="btn"
+              href='https://drive.google.com/file/d/1PhHwgd2HwZ336UPFQxW9FhdKduPxwP-y/view?usp=sharing'
+              title="resume on Google Drive"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              resume
+            </a>
+            <div className='btn'>✿</div>
+            <a
+              className="btn"
+              href='https://www.linkedin.com/in/nhalsema/'
+              title="linkedin.com/in/nhalsema"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin
+            </a>
+            <div className='btn'>✿</div>
+            <a
+              className="btn"
+              href='https://github.com/nhalsema'
+              title="github.com/nhalsema"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
+            </a>
+            <div className='btn'>✿</div>
+            <a
+              className="btn"
+              href='mailto:nbhalsema@gmail.com'
+              title="email: nbhalsema@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              email
+            </a>
+          </div>
         </div>
       </div>
       {/* <div className="footer-verticle">

@@ -58,7 +58,8 @@ body {
 
 .nav {
     // background-color: lightskyblue;
-    font-size: .25em;
+    // font-size: .25em;
+    font-size: calc(4px + .1vw);
     position: absolute;
     left: .4vw;
     display: grid;
@@ -67,7 +68,17 @@ body {
     z-index: 9999;
 }
 
+.footer {
+    // background-color: thistle;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: calc(4px + .1vw);
+    z-index: 9998;
+}
+
 .btn {
+    text-decoration: none;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -78,6 +89,10 @@ body {
     font-family: 'champagne';
     font-size: 5em;
     line-height: 1;
+    // added for flowers
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: .6vw;   
 }
 
 // HOME
@@ -93,6 +108,8 @@ body {
 
 // CARD
 .card {
+    background-color: lightblue;
+    // height: calc(100vh - 120px);
     position: absolute;
     right: 10px;
     top: 50%;
@@ -102,8 +119,8 @@ body {
 
 // ABOUT
 .card__bio_img {
-    width: calc(80px + 8vw);
-    height: calc(80px + 8vw);
+    width: calc(30px + 8vw);
+    height: calc(30px + 8vw);
     border-radius: 25%;
     float: right;
 }
@@ -127,18 +144,34 @@ body {
 }
 
 .card__hiring_stack {
+    width: 50vw;
+    margin-top: 1vw;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-end;
 }
 
 .card__hiring_stack_item {
-    border: 1px solid $bone;
-    margin: 5px;
+    margin: .4vw;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
+    // padding-left: .2px;
+    // padding-right: .2px;
+    // border: 1px solid rgba($bone, 0.2);
+    // border-radius: 10%;
+    vertical-align: bottom;
+
+}
+
+.card__hiring_link {
+    // background-color: orange;
+    // position: absolute;
+    top: auto;
+    bottom: 5px;
+    font-size: calc(4px + .1vw);
+    line-height: 1;
+    margin-top: 1.5vw;
 }
 
 //LESS HALF SCREEN 
@@ -175,6 +208,14 @@ body {
         font-size: .4em;
     }
 
+    .footer {
+        // background-color: thistle;
+        font-size: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
     // HOME
     .home {
         right: auto;
@@ -201,8 +242,8 @@ body {
     .card__bio_img {
         float: left;
         margin-top: 2%;
-        width: calc(60px + 20vw);
-        height: calc(60px + 20vw);
+        width: calc(30px + 20vw);
+        height: calc(30px + 20vw);
     }
 
     .card__bio_text {
