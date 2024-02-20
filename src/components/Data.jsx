@@ -18,8 +18,8 @@ export default [
                         <img className='card__bio_img' src={nhImg} />
                     </div>
                     <div className='card__bio_text'>
-                        Nicolette is a flexible multihypenate who is most excited by technology when it is utilized to increase ease in daily life. 
-                        She endeavors to always find the best tool for the job, and as such, she is frequently learning new skills. 
+                        Nicolette is a flexible multihypenate who is most excited by technology when it is utilized to increase ease in daily life.
+                        She endeavors to always find the best tool for the job, and as such, she is frequently learning new skills.
                         She strives to proceed humbly and foster an environment of communication, continuous improvement, and optimization.
                         <br /><br />
                         Nicolette lives in Bellingham, WA with her little border collie River.
@@ -37,6 +37,7 @@ export default [
                         <br />
                         Here are some things I'm good at:
                     </div>
+                    {/* 
                     <div className='card__hiring_stack'>
                         <div className='card__hiring_stack_item'>React</div>         <div className='card__hiring_stack_item'>✦</div>
                         <div className='card__hiring_stack_item'>Java</div>          <div className='card__hiring_stack_item'>✦</div>
@@ -62,8 +63,38 @@ export default [
                         <div className='card__hiring_stack_item'>requirements gathering</div>   <div className='card__hiring_stack_item'>°｡</div>
                         <div className='card__hiring_stack_item'>business analytics</div>       <div className='card__hiring_stack_item'>｡°</div>
                         <div className='card__hiring_stack_item'>technical documentation</div>  <div className='card__hiring_stack_item'>°｡</div>
-                        <div className='card__hiring_stack_item'>onboarding</div>               
+                        <div className='card__hiring_stack_item'>onboarding</div>
                     </div>
+ */}
+                    <div className='card__hiring_stack_a'>
+                        <div className='card__hiring_stack_column'>React</div>      
+                        <div className='card__hiring_stack_column'>Java</div>       
+                        <div className='card__hiring_stack_column'>JavaScript</div> 
+                        <div className='card__hiring_stack_column'>VBA</div>        
+                        <div className='card__hiring_stack_column'>jQuery</div>     
+                        <div className='card__hiring_stack_column'>HTML</div>       
+                        <div className='card__hiring_stack_column'>CSS</div>        
+                        <div className='card__hiring_stack_column'>Sass</div>       
+                        <div className='card__hiring_stack_column'>REST API</div>   
+                        <div className='card__hiring_stack_column'>SQL</div>        
+                        <div className='card__hiring_stack_column'>GitHub</div>     
+                        <div className='card__hiring_stack_column'>VSCode</div>     
+                        <div className='card__hiring_stack_column'>Eclipse</div>    
+                        <div className='card__hiring_stack_column'>TortoiseSVN</div>
+                        <div className='card__hiring_stack_column'>Visio</div>      
+                        <div className='card__hiring_stack_column'>Tableau</div>    
+                        <div className='card__hiring_stack_column'>Power BI</div>   
+                        <div className='card__hiring_stack_column'>Power Query</div>
+                    </div>
+                    <div className='card__hiring_stack_b'>
+                        <div className='card__hiring_stack_column'>process automation</div>     
+                        <div className='card__hiring_stack_column'>requirements gathering</div> 
+                        <div className='card__hiring_stack_column'>business analytics</div>     
+                        <div className='card__hiring_stack_column'>technical documentation</div>
+                        <div className='card__hiring_stack_column'>onboarding</div>
+                    </div>
+
+
                 </div>
         }
     ],
