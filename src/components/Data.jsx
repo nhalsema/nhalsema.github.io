@@ -79,36 +79,36 @@ export default [
     [
         {
             top:
-                <div className='card__endeavor'>
-                    <div className='card__endeavor_header'>
-                        This Portfolio
-                    </div>
-                    <div className='card__endeavor_desc'>
-                        was loosely designed in Figma and
-                        coded in VS Code by yours truly.
-                        Built with React and custom CSS.
-                        She currently lives on Github's Pages.
-                    </div>
-                    <div className='card__endeavor_mini'>
-                        *her name is veronica
-                    </div>
-                    <br />
-                    <div className='card__endeavor_header'>
-                        NEST Therapies
-                    </div>
-                    <div className='card__endeavor_desc'>
-                        NEST Therapies is a site I designed using Squarespace.
-                        I offered a comprehensive consulting experience aiding the client with creative ideation, scheduling calendar integration, crafting copy & more.
-                        I utilized my network to bring on a graphic designer to strengthen the project in areas where I recognized my limitations.
-                    </div>
-                    <div className='card__endeavor_mini'>
-                        *HIPPA compliance was considered for all comms with potential clients
-                    </div>
-                    <br />
-                    <div className='card__endeavor_header'>
-                        & More
-                    </div>
-                </div>
+                    <div className='card__endeavor'>
+                        <div className='card__endeavor_header'>
+                            This Portfolio
+                        </div>
+                        <div className='card__endeavor_desc'>
+                            was loosely designed in Figma and
+                            coded in VS Code by yours truly.
+                            Built with React and custom CSS.
+                            She currently lives on Github's Pages.
+                        </div>
+                        <div className='card__endeavor_mini'>
+                            *her name is veronica
+                        </div>
+                        <br />
+                        <div className='card__endeavor_header'>
+                            NEST Therapies
+                        </div>
+                        <div className='card__endeavor_desc'>
+                            NEST Therapies is a site I designed using Squarespace.
+                            I offered a comprehensive consulting experience aiding the client with creative ideation, scheduling calendar integration, crafting copy & more.
+                            I utilized my network to bring on a graphic designer to strengthen the project in areas where I recognized my limitations.
+                        </div>
+                        <div className='card__endeavor_mini'>
+                            *HIPPA compliance was considered for all comms with potential clients
+                        </div>
+                        <br />
+                            <div className='card__endeavor_header'>
+                                & More
+                            </div>
+                        </div>
         }
     ],
     [

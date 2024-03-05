@@ -228,7 +228,7 @@ body {
     width: 47vw;
     position: absolute;
     top: 52%;
-    left: 5px;
+    right: 10px;
     transform: translateY(-50%);
     text-align: right;
 }
@@ -407,6 +407,8 @@ body {
     //ENDEAVORS
     .card__endeavor {
         width: 98%;
+        top: 52%;
+        left: 5px;
     }
 
     .card__endeavor_header {
