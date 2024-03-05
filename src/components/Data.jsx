@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import nhImg from '../assets/nhImg.jpg';
 
 export default [
@@ -32,80 +31,104 @@ export default [
         {
             top:
                 <div className='card'>
-                    <div className='card__hiring_text'>
+                    <div className='card__hiring_header'>
                         Hey, you're hiring? Oh, cool! Because I'm available!
                         <br />
                         Here are some things I'm good at:
                     </div>
-                    {/* 
                     <div className='card__hiring_stack'>
-                        <div className='card__hiring_stack_item'>React</div>         <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>Java</div>          <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>JavaScript</div>    <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>VBA</div>           <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>jQuery</div>        <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>HTML</div>          <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>CSS</div>           <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>Sass</div>          <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>REST API</div>      <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>SQL</div>           <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>GitHub</div>        <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>VSCode</div>        <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>Eclipse</div>       <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>TortoiseSVN</div>   <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>Visio</div>         <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>Tableau</div>       <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>Power BI</div>      <div className='card__hiring_stack_item'>✦</div>
-                        <div className='card__hiring_stack_item'>Power Query</div>
+                        <div>React</div>
+                        <div>Java</div>
+                        <div>JavaScript</div>
+                        <div>VBA</div>
+                        <div>jQuery</div>
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>Sass</div>
+                        <div>REST API</div>
+                        <div>SQL</div>
+                        <div>GitHub</div>
+                        <div>VSCode</div>
+                        <div>Eclipse</div>
+                        <div>TortoiseSVN</div>
+                        <div>Visio</div>
+                        <div>Tableau</div>
+                        <div>Power BI</div>
+                        <div>Power Query</div>
                     </div>
-                    <div className='card__hiring_stack'>
-                        <div className='card__hiring_stack_item'>process automation</div>       <div className='card__hiring_stack_item'>｡°</div>
-                        <div className='card__hiring_stack_item'>requirements gathering</div>   <div className='card__hiring_stack_item'>°｡</div>
-                        <div className='card__hiring_stack_item'>business analytics</div>       <div className='card__hiring_stack_item'>｡°</div>
-                        <div className='card__hiring_stack_item'>technical documentation</div>  <div className='card__hiring_stack_item'>°｡</div>
-                        <div className='card__hiring_stack_item'>onboarding</div>
+                    <div className='card__hiring_skills'>
+                        <div>Process Automation</div>
+                        <div>Requirements Gathering</div>
+                        <div>Business Analytics</div>
+                        <div>Technical Documentation</div>
+                        <div>Onboarding</div>
                     </div>
- */}
-                    <div className='card__hiring_stack_a'>
-                        <div className='card__hiring_stack_column'>React</div>      
-                        <div className='card__hiring_stack_column'>Java</div>       
-                        <div className='card__hiring_stack_column'>JavaScript</div> 
-                        <div className='card__hiring_stack_column'>VBA</div>        
-                        <div className='card__hiring_stack_column'>jQuery</div>     
-                        <div className='card__hiring_stack_column'>HTML</div>       
-                        <div className='card__hiring_stack_column'>CSS</div>        
-                        <div className='card__hiring_stack_column'>Sass</div>       
-                        <div className='card__hiring_stack_column'>REST API</div>   
-                        <div className='card__hiring_stack_column'>SQL</div>        
-                        <div className='card__hiring_stack_column'>GitHub</div>     
-                        <div className='card__hiring_stack_column'>VSCode</div>     
-                        <div className='card__hiring_stack_column'>Eclipse</div>    
-                        <div className='card__hiring_stack_column'>TortoiseSVN</div>
-                        <div className='card__hiring_stack_column'>Visio</div>      
-                        <div className='card__hiring_stack_column'>Tableau</div>    
-                        <div className='card__hiring_stack_column'>Power BI</div>   
-                        <div className='card__hiring_stack_column'>Power Query</div>
+                    <div className='card__hiring_hobbies'>
+                        <div>Blues<br />Dancing</div>
+                        <div>DnD</div>
+                        <div>Ceramcis</div>
+                        <div>Writing &<br />Poetry</div>
                     </div>
-                    <div className='card__hiring_stack_b'>
-                        <div className='card__hiring_stack_column'>process automation</div>     
-                        <div className='card__hiring_stack_column'>requirements gathering</div> 
-                        <div className='card__hiring_stack_column'>business analytics</div>     
-                        <div className='card__hiring_stack_column'>technical documentation</div>
-                        <div className='card__hiring_stack_column'>onboarding</div>
+                    <div className='card__hiring_footer'>
+                        When you're ready to learn more, <br />
+                        check out the links below.
                     </div>
-
-
                 </div>
         }
     ],
     [
         {
-            top: "Loosely designed in Figma and coded in Visual Studio Code by yours truly. Built with Next.js and Tailwind CSS, deployed with Vercel. All text is set in the Inter typeface."
+            top:
+                <div className='card__endeavor'>
+                    <div className='card__endeavor_header'>
+                        This Portfolio
+                    </div>
+                    <div className='card__endeavor_desc'>
+                        was loosely designed in Figma and
+                        coded in VS Code by yours truly.
+                        Built with React and custom CSS.
+                        She currently lives on Github's Pages.
+                    </div>
+                    <div className='card__endeavor_mini'>
+                        *her name is veronica
+                    </div>
+                    <br />
+                    <div className='card__endeavor_header'>
+                        NEST Therapies
+                    </div>
+                    <div className='card__endeavor_desc'>
+                        NEST Therapies is a site I designed using Squarespace.
+                        I offered a comprehensive consulting experience aiding the client with creative ideation, scheduling calendar integration, crafting copy & more.
+                        I utilized my network to bring on a graphic designer to strengthen the project in areas where I recognized my limitations.
+                    </div>
+                    <div className='card__endeavor_mini'>
+                        *HIPPA compliance was considered for all comms with potential clients
+                    </div>
+                    <br />
+                    <div className='card__endeavor_header'>
+                        & More
+                    </div>
+                </div>
         }
     ],
     [
         {
-            top: "CONTACT"
+            top:
+                <div className='card'>
+                    <div className='card__contact'>
+                        Hey there! I love meeting new people. <br />
+                        If you're interested in working together, or just want to chat, feel free to reach out to me at&nbsp;
+                        <a
+                            className='card__contact_link'
+                            target="_blank" rel="noopener noreferrer"
+                            href='mailto:nbhalsema@gmail.com'
+                            title="email: nbhalsema@gmail.com"
+                        >
+                            nbhalsema@gmail.com
+                        </a>
+                        .
+                    </div>
+                </div>
         }
     ],
 ]
