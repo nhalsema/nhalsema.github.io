@@ -71,16 +71,16 @@ function App() {
             >
               <img src={svgMail} className="icon" alt="mail icon linkto email" />
             </a>
-            {/* <img src={svgCone} className="icon" alt="readme" onClick={() => setActive("Contact")} /> */}
+
+
           </div>
         </div>
       </div>
       {/* <div className="footer-verticle">
           created Jan 2024 - last updated Jan 2024
         </div> */}
-      <div className="footer-horizontal">
-        {/* created Jan 2024 - last updated Jan 2024 */}
-        {/* dark light disco */}
+      <div className="credits">
+        updated April 2024
       </div>
     </div >
   );

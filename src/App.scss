@@ -67,16 +67,8 @@ body {
     z-index: 9998;
 }
 
-.footer_desktop {
-    // background-color: thistle;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: calc(4px + .1vw);
-    z-index: 9999;
-}
-
-.footer {
+// icons footer
+.footer { 
     // background-color: teal;
     position: absolute;
     bottom: 15px;
@@ -247,7 +239,6 @@ body {
     text-align: left;
 }
 
-
 //CONNECT CONTACT
 .card__contact {
     width: 47vw;
@@ -256,6 +247,14 @@ body {
 
 .card__contact_link {
     color: $bone;
+}
+
+.credits {
+    font-size: calc(8px + .4vw);
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
 }
 
 //LESS HALF SCREEN 
@@ -301,6 +300,7 @@ body {
         font-size: .4em;
     }
 
+    // icons footer
     .footer {
         // background-color: teal;
         position: absolute;
@@ -427,5 +427,13 @@ body {
     .card__contact {
         text-align: left;
         width: 98%;
+    }
+
+    .credits {
+        font-size: calc(8px + .4vw);
+        text-align: right;
+        position: absolute;
+        bottom: .05vh;
+        right: 15px;
     }
 }
