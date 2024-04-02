@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import './App.scss';
 import './components/background/LavaLamp.css';
+import './App.scss';
 import LavaLamp from "./components/background/LavaLamp.jsx";
 import Card from './components/Card.jsx';
 import Data from './components/Data.jsx';
@@ -17,6 +17,7 @@ function App() {
 
   return (
     <div>
+      {/* disco background */}
       <canvas id="canvas"></canvas>
       <div className="container">
         <div className="frame">

@@ -231,28 +231,27 @@ body {
     right: 10px;
     transform: translateY(-50%);
     text-align: right;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: calc(5px + .2vw);
+    grid-row-gap: calc(5px + 2vw);
 }
 
-.card__endeavor_header {
-    // background-color: cadetblue;
-    font-size: calc(20px + .5vw);
-    line-height: 1.5;
-    text-decoration: underline;
+.card__endeavor_date {
+    text-align: left;
 }
 
-.card__endeavor_desc {
-    // background-color: cadetblue;
-    font-size: calc(12px + .5vw);
-    line-height: 1.5;
+.card__endeavor_title {
+    text-align: left;
 }
 
-.card__endeavor_mini {
-    // background-color: cadetblue;
-    font-size: calc(6px + .5vw);
-}
 
+//CONNECT CONTACT
 .card__contact {
     width: 47vw;
+    font-size: calc(12px + 1vw);
 }
 
 .card__contact_link {
@@ -362,10 +361,10 @@ body {
     .card__bio_text {
         // background-color:cadetblue;
         width: 80vw;
-        font-size: calc(12px + 1.5vw);
+        font-size: calc(12px + .5vh);
         text-align: left;
         order: -1;
-        padding-top: calc(10px + 10vw);
+        padding-top: calc(10px + 10vh);
     }
 
     // HIRING
@@ -376,29 +375,29 @@ body {
     }
 
     .card__hiring_stack {
-        font-size: calc(8px + 1vw);
-        line-height: calc(10px + .5vw);
+        font-size: calc(8px + .6vh);
+        line-height: calc(10px + .3vh);
         padding-top: 8px;
         margin-top: 10px;
     }
 
     .card__hiring_skills {
-        font-size: calc(8px + 1vw);
-        line-height: calc(10px + .5vw);
+        font-size: calc(8px + .6vh);
+        line-height: calc(10px + .3vh);
         padding-top: 8px;
         margin-top: 10px;
     }
 
     .card__hiring_hobbies {
-        font-size: calc(8px + 1vw);
-        line-height: calc(10px + .5vw);
+        font-size: calc(8px + .6vh);
+        line-height: calc(10px + .3vh);
         padding-top: 15px;
         padding-top: 8px;
         margin-top: 10px;
     }
 
     .card__hiring_footer {
-        font-size: calc(12px + 1vw);
+        font-size: calc(12px + .6vh);
         text-align: left;
         margin-top: 0px;
         line-height: 1.25;
@@ -421,7 +420,7 @@ body {
 
     .card__endeavor_mini {
         text-align: left;
-        font-size: calc(8px + .5vw);
+        font-size: calc(8px + .3vh);
         width: 75%;
     }
 
