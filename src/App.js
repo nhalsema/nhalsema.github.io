@@ -84,10 +84,10 @@ function App() {
               <img src={svgMail} className="icon" alt="mail icon linkto email" />
             </a>
           </div>
-          <div className="toggle">
+          <div className="toggle" title="change background">
             {/* <Toggle /> */}
-            <label className="switch">
-              <input type="checkbox" checked={isToggled} onChange={handleToggle} />
+            <label className="switch" >
+              <input type="checkbox" checked={isToggled} onChange={handleToggle}/>
               <span className="slider round"></span>
             </label>
           </div>

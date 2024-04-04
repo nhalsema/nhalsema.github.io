@@ -303,7 +303,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $raisin;
+    background-color: transparent; 
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -322,10 +322,6 @@ body {
 
 input:checked+.slider {
     background-color: $bone;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px $raisin;
 }
 
 input:checked+.slider:before {
