@@ -68,7 +68,7 @@ body {
 }
 
 // icons footer
-.footer { 
+.footer {
     // background-color: teal;
     position: absolute;
     bottom: 15px;
@@ -257,6 +257,78 @@ body {
     right: 40px;
 }
 
+// TOGGLE 
+.toggle {
+    position: absolute;
+    // right: 8px;
+    // top: 8px;
+    left: 170px;
+    bottom: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 23.8px;
+
+    vertical-align: bottom;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $raisin;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18.2px;
+    width: 18.2px;
+    left: 2.8px;
+    bottom: 2.8px;
+    background-color: $bone;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: $bone;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px $raisin;
+}
+
+input:checked+.slider:before {
+    background-color: $raisin;
+    -webkit-transform: translateX(18.2px);
+    -ms-transform: translateX(18.2px);
+    transform: translateX(18.2px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
 //LESS HALF SCREEN 
 @media only screen and (max-width: 900px) {
     .name {
@@ -270,6 +342,11 @@ body {
 
     .card {
         top: 55%;
+    }
+
+    .toggle {
+        left: 170px;
+        bottom: 14px;
     }
 }
 
@@ -436,4 +513,22 @@ body {
         bottom: .05vh;
         right: 15px;
     }
+
+    .toggle {
+        left: 135px;
+        bottom: 8px;
+        z-index: 9999;        
+    }
+
+    // end mobile 
 }
+
+// centering
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+

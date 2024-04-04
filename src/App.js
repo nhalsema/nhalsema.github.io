@@ -8,7 +8,7 @@ import svgLinkedin from './assets/svg-linkedin.svg';
 import svgMail from './assets/svg-mail.svg';
 import svgDoc from './assets/svg-doc.svg';
 import svgGithub from './assets/svg-github.svg';
-import svgCone from './assets/svg-trafficcone.svg';
+import Toggle from "./components/Toggle.jsx";
 // https://www.svgrepo.com/collection/meteor-solid-tiny-icons/
 
 function App() {
@@ -70,15 +70,13 @@ function App() {
               title="email: nbhalsema@gmail.com"
             >
               <img src={svgMail} className="icon" alt="mail icon linkto email" />
-            </a>
-
-
+            </a>          
           </div>
+          <div className="toggle">
+              <Toggle />
+            </div>
         </div>
       </div>
-      {/* <div className="footer-verticle">
-          created Jan 2024 - last updated Jan 2024
-        </div> */}
       <div className="credits">
         updated April 2024
       </div>
