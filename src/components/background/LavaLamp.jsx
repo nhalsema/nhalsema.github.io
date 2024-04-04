@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 // reference: https://codepen.io/smpnjn/pen/yLPdEPQ 
 
-function LavaLamp() {
+function LavaLamp(isToggled){
+
+    
 
     const rand = function (min, max) {
         return Math.random() * (max - min) + min;
@@ -129,6 +131,7 @@ function LavaLamp() {
 
         window.requestAnimationFrame(changeCanvas);
     }, []); // the empty array means the effect will only run once
+
 }
 
 export default LavaLamp;

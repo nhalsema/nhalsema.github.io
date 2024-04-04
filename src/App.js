@@ -8,18 +8,30 @@ import svgLinkedin from './assets/svg-linkedin.svg';
 import svgMail from './assets/svg-mail.svg';
 import svgDoc from './assets/svg-doc.svg';
 import svgGithub from './assets/svg-github.svg';
-import Toggle from "./components/Toggle.jsx";
+// import Toggle from "./components/Toggle.jsx";
 // https://www.svgrepo.com/collection/meteor-solid-tiny-icons/
 
 function App() {
+  {/* disco background 1/2 */ }
   LavaLamp();
   const [active, setActive] = useState("Home");
 
+  const [isToggled, setIsToggled] = useState(false);
+  const handleToggle = () => { setIsToggled(!isToggled); };
+
+  const Background = () => {
+    if (!isToggled) {
+      return "container";
+    } else {
+      return "basic";
+    }
+  }
+
   return (
     <div>
-      {/* disco background */}
+      {/* disco background part 2/2 */}
       <canvas id="canvas"></canvas>
-      <div className="container">
+      <div className={Background()}>
         <div className="frame">
           <div className="name">
             Nicolette Halsema
@@ -70,11 +82,15 @@ function App() {
               title="email: nbhalsema@gmail.com"
             >
               <img src={svgMail} className="icon" alt="mail icon linkto email" />
-            </a>          
+            </a>
           </div>
           <div className="toggle">
-              <Toggle />
-            </div>
+            {/* <Toggle /> */}
+            <label className="switch">
+              <input type="checkbox" checked={isToggled} onChange={handleToggle} />
+              <span className="slider round"></span>
+            </label>
+          </div>
         </div>
       </div>
       <div className="credits">
