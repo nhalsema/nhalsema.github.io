@@ -114,6 +114,7 @@ export default [
                         <div className='card__endeavor_desc'>
                             Figma / VS Code / React / SCSS / Github Pages
                         </div>
+
                         {/* NEST */}
                         <div className='card__endeavor_date'>
                             06/2023
@@ -124,6 +125,18 @@ export default [
                         <div className='card__endeavor_desc'>
                             Squarespace / Consulting / Copywriting
                         </div>
+
+                        {/* Blues */}
+                        <div className='card__endeavor_date'>
+                            06/2023
+                        </div>
+                        <div className='card__endeavor_title'>
+                            Bellingham Blues Dance
+                        </div>
+                        <div className='card__endeavor_desc'>
+                            Community Leader / Dance Instructor / Marketing & Event Planner
+                        </div>
+
                     </div>
                 </div>
 

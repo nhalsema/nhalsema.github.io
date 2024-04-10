@@ -135,6 +135,24 @@ body {
     margin-right: .6vw;
 }
 
+.btn__minimal {
+    text-decoration: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: $bone;
+    font-family: 'champagne';
+    font-size: 2.5em;
+    line-height: 1;
+    // added for flowers
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: .6vw;
+}
+
 // HOME
 .home {
     // background-color: orange;
@@ -275,10 +293,9 @@ body {
 // TOGGLE 
 .toggle {
     position: absolute;
-    // right: 8px;
-    // top: 8px;
     left: 170px;
     bottom: 15px;
+
 }
 
 .switch {
@@ -303,9 +320,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: transparent; 
+    background-color: transparent;
     -webkit-transition: .4s;
     transition: .4s;
+    border: .5px solid $bone;
+
 }
 
 .slider:before {
@@ -315,20 +334,30 @@ body {
     width: 18.2px;
     left: 2.8px;
     bottom: 2.8px;
-    background-color: $bone;
+    // background-color: $bone;
     -webkit-transition: .4s;
     transition: .4s;
-}
+
+    background-image: url('./assets/svg-moon.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
 
 input:checked+.slider {
     background-color: $bone;
 }
 
 input:checked+.slider:before {
-    background-color: $raisin;
+    background-color: $bone;
     -webkit-transform: translateX(18.2px);
     -ms-transform: translateX(18.2px);
     transform: translateX(18.2px);
+
+    background-image: url('./assets/svg-sun.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Rounded sliders */

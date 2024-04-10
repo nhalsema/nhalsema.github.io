@@ -42,7 +42,7 @@ function App() {
               <button className="btn" onClick={() => setActive("About")}>About</button><br />
               <button className="btn" onClick={() => setActive("Hiring")}>Are you hiring?</button><br />
               <button className="btn" onClick={() => setActive("Work")}>Endeavors</button><br />
-              <button className="btn" onClick={() => setActive("Contact")}>Connect</button>
+              <button className="btn" onClick={() => setActive("Contact")}>Connect</button>            
             </nav>
           </div>
           <div>
@@ -87,7 +87,7 @@ function App() {
           <div className="toggle" title="change background">
             {/* <Toggle /> */}
             <label className="switch" >
-              <input type="checkbox" checked={isToggled} onChange={handleToggle}/>
+              <input type="checkbox" checked={isToggled} onChange={handleToggle} />
               <span className="slider round"></span>
             </label>
           </div>
