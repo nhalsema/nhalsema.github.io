@@ -71,7 +71,7 @@ function App() {
             </a>
             <a
               className="footer__img" target="_blank" rel="noopener noreferrer"
-              href='https://drive.google.com/file/d/1PhHwgd2HwZ336UPFQxW9FhdKduPxwP-y/view?usp=sharing'
+              href='https://drive.google.com/file/d/17HbxMJR7gw_gk2_Lloz9xaXbDqDl6wBA/view?usp=sharing'
               title="resume on Google Drive"
             >
               <img src={svgDoc} className="icon" alt="doc icon linkto resume" />
