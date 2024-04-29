@@ -19,11 +19,14 @@ function App() {
   const [isToggled, setIsToggled] = useState(false);
   const handleToggle = () => { setIsToggled(!isToggled); };
 
+  // const [buttonText, setButtonText] = useState("go\nminimal");
+const [buttonText, setButtonText] = useState("go\nminimal");
+
   const Background = () => {
     if (!isToggled) {
-      return "container";
+      return "container"; //disco
     } else {
-      return "basic";
+      return "basic"; //simpl
     }
   }
 
@@ -40,58 +43,62 @@ function App() {
             <nav>
               <button className="btn" onClick={() => setActive("Home")}>Home</button><br />
               <button className="btn" onClick={() => setActive("About")}>About</button><br />
-              <button className="btn" onClick={() => setActive("Hiring")}>Are you hiring?</button><br />
+              {/* <button className="btn" onClick={() => setActive("Hiring")}>Are you hiring?</button><br /> */}
               <button className="btn" onClick={() => setActive("Work")}>Endeavors</button><br />
-              <button className="btn" onClick={() => setActive("Contact")}>Connect</button>            
+              <button className="btn" onClick={() => setActive("Contact")}>Connect</button>
             </nav>
           </div>
           <div>
             {active === "Home" && <Card data={Data} cardIndex={0} />}
             {active === "About" && <Card data={Data} cardIndex={1} />}
-            {active === "Hiring" && <Card data={Data} cardIndex={2} />}
+            {/* {active === "Hiring" && <Card data={Data} cardIndex={2} />} */}
             {active === "Work" && <Card data={Data} cardIndex={3} />}
             {active === "Contact" && <Card data={Data} cardIndex={4} />}
             {active === "Readme" && <Card data={Data} cardIndex={5} />}
           </div>
           {/*  ✦✮✩☯︎❀✌︎︎⭒✺☺ */}
-          <div className='footer'>
-            <a
-              className="footer__img" target="_blank" rel="noopener noreferrer"
-              href='https://www.linkedin.com/in/nhalsema/'
-              title="linkedin.com/in/nhalsema"
-            >
-              <img src={svgLinkedin} className="icon" alt="linkedin logo linkto" />
-            </a>
-            <a
-              className="footer__img" target="_blank" rel="noopener noreferrer"
-              href='https://github.com/nhalsema'
-              title="github.com/nhalsema"
-            >
-              <img src={svgGithub} className="icon_extra" alt="github logo linkto" />
-            </a>
-            <a
-              className="footer__img" target="_blank" rel="noopener noreferrer"
-              href='https://drive.google.com/file/d/17HbxMJR7gw_gk2_Lloz9xaXbDqDl6wBA/view?usp=sharing'
-              title="resume on Google Drive"
-            >
-              <img src={svgDoc} className="icon" alt="doc icon linkto resume" />
-            </a>
-            <a
-              className="footer__img" target="_blank" rel="noopener noreferrer"
-              href='mailto:nbhalsema@gmail.com'
-              title="email: nbhalsema@gmail.com"
-            >
-              <img src={svgMail} className="icon" alt="mail icon linkto email" />
-            </a>
-          </div>
-          <div className="toggle" title="change background">
-            {/* <Toggle /> */}
-            <label className="switch" >
-              <input type="checkbox" checked={isToggled} onChange={handleToggle} />
-              <span className="slider round"></span>
-            </label>
-          </div>
+          {/* old footer location */}
         </div>
+      </div>
+      <div className='footer'>
+        <a
+          className="footer__img" target="_blank" rel="noopener noreferrer"
+          href='https://www.linkedin.com/in/nhalsema/'
+          title="linkedin.com/in/nhalsema"
+        >
+          <img src={svgLinkedin} className="icon" alt="linkedin logo linkto" />
+        </a>
+        <a
+          className="footer__img" target="_blank" rel="noopener noreferrer"
+          href='https://github.com/nhalsema'
+          title="github.com/nhalsema"
+        >
+          <img src={svgGithub} className="icon" alt="github logo linkto" />
+        </a>
+        <a
+          className="footer__img" target="_blank" rel="noopener noreferrer"
+          href='https://drive.google.com/file/d/17HbxMJR7gw_gk2_Lloz9xaXbDqDl6wBA/view?usp=sharing'
+          title="resume on Google Drive"
+        >
+          <img src={svgDoc} className="icon" alt="doc icon linkto resume" />
+        </a>
+        <a
+          className="footer__img" target="_blank" rel="noopener noreferrer"
+          href='mailto:nbhalsema@gmail.com'
+          title="email: nbhalsema@gmail.com"
+        >
+          <img src={svgMail} className="icon" alt="mail icon linkto email" />
+        </a>
+
+        {/* <Toggle /> */}
+        
+        <div className="toggle" title="change background">
+          <label className="switch" >
+            <input type="checkbox" checked={isToggled} onChange={handleToggle} />
+            <span className="slider round"></span>
+          </label>
+        </div> 
+
       </div>
       <div className="credits">
         updated April 2024
