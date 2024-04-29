@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5e9ad56.css",
-    "main.js": "/static/js/main.9894396d.js",
+    "main.css": "/static/css/main.961f49d3.css",
+    "main.js": "/static/js/main.9f0ecb79.js",
     "static/js/787.3297d933.chunk.js": "/static/js/787.3297d933.chunk.js",
     "static/media/nhImg.jpg": "/static/media/nhImg.3299c42ac375a6810ff6.jpg",
-    "static/media/ChampagneFont.ttf": "/static/media/ChampagneFont.97e52f7c6df37667f850.ttf",
     "static/media/svg-sun.svg": "/static/media/svg-sun.4f2462bc8d677dc9acc9.svg",
     "static/media/svg-github.svg": "/static/media/svg-github.dd0b1ab065190f718f1a616f4daa5011.svg",
     "static/media/svg-linkedin.svg": "/static/media/svg-linkedin.ec503e56b04ffcb4068adf1145efff31.svg",
@@ -12,12 +11,12 @@
     "static/media/svg-moon.svg": "/static/media/svg-moon.67d87c0529167ae6b3f2.svg",
     "static/media/svg-mail.svg": "/static/media/svg-mail.67702ced2cc45356369450c21aa6202b.svg",
     "index.html": "/index.html",
-    "main.a5e9ad56.css.map": "/static/css/main.a5e9ad56.css.map",
-    "main.9894396d.js.map": "/static/js/main.9894396d.js.map",
+    "main.961f49d3.css.map": "/static/css/main.961f49d3.css.map",
+    "main.9f0ecb79.js.map": "/static/js/main.9f0ecb79.js.map",
     "787.3297d933.chunk.js.map": "/static/js/787.3297d933.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5e9ad56.css",
-    "static/js/main.9894396d.js"
+    "static/css/main.961f49d3.css",
+    "static/js/main.9f0ecb79.js"
   ]
 }
